@@ -1,0 +1,171 @@
+@media (max-width: 900px) {
+    .header {
+        position: relative;
+        z-index: 1;
+        padding: 5%;
+    }
+
+    .header .invite {
+        display: none;
+    }
+    
+    #menu__toggle {
+        opacity: 0;
+    }
+
+    #menu__toggle:checked+.menu__btn>span {
+        transform: rotate(45deg);
+        background: hsl(257, 27%, 26%);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::before {
+        top: 0;
+        transform: rotate(0deg);
+        background: hsl(257, 27%, 26%);
+    }
+
+    #menu__toggle:checked+.menu__btn>span::after {
+        top: 0;
+        transform: rotate(90deg);
+        background: hsl(257, 27%, 26%);
+    }
+
+    .menu__btn {
+        right: 5%;
+        position: absolute;
+        width: 2rem;
+        height: 1rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .menu__btn>span,
+    .menu__btn>span::before,
+    .menu__btn>span::after {
+        display: block;
+        position: absolute;
+        width: 2rem;
+        height: 2px;
+        background-color: hsl(257, 27%, 26%);
+        transition-duration: .25s;
+    }
+
+    .menu__btn>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu__btn>span::after {
+        content: '';
+        top: 8px;
+    }
+
+    .header .menu__box {
+        position: absolute;
+        top: 100%;
+        width: 80%;
+        background: hsl(257, 27%, 26%);
+        border-radius: 10px;
+        left: -100%;
+        padding: 1.8rem;
+        align-items: center;
+        flex-direction: column;
+        transition-duration: .25s;
+        text-align: center;
+        z-index: 1;
+        gap: 20px;
+    }
+
+    .header .menu__box-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .header hr {
+        width: 100%;
+    }
+
+    .header .menu__box a {
+        color: #ffffff;
+    }
+
+    .aparecer {
+        left: 10% !important;
+    }
+
+    .header .login-area {
+        display: none;
+    }
+
+    .main .intro {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        padding: 5%;
+    }
+
+    .main .intro img {
+        width: 100%;
+    }
+
+    .main .shorter-links {
+        margin: 7% 5%;
+    }
+
+    .main .shorter-links form {
+        flex-direction: column;
+    }
+
+    .main #submit,
+    .main #input-url {
+        width: 100%;
+    }
+
+    .main .features {
+        padding: 10% 5%;
+    }
+
+    .main .features-list {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .main .features-list .feature {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        z-index: 1;
+        top: auto;
+    }
+
+    .main .feature-1::after {
+        width: 10px;
+        height: 100px;
+        right: 50%;
+        top: 100%;
+        z-index: 0;
+    }
+    
+    .main .feature-1::before {
+        width: 10px;
+        height: 60px;
+        left: 50%;
+        top: -20%;
+        z-index: 0;
+    }
+
+    .main .cta {
+        text-align: center;
+        padding: 5%;
+    }
+
+    .footer {
+        padding: 5%;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+}

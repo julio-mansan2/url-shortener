@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer';
+}
+
+.header {
+    grid-area: header;
+    padding: 5% 10%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    margin-right: 30px;
+}
+
+.header nav {
+    display: flex;
+}
+
+.header .login-area {
+    position: absolute;
+    display: flex;
+    gap: 30px;
+    right: 10%;
+}
+
+.header .register,
+.main .get-started {
+    padding: 10px 20px;
+    color: hsl(180, 5%, 96%);
+    background: hsl(180, 66%, 49%);
+    border-radius: 100px;
+    transition: 0.3s;
+}
+
+.header .register:hover,
+.main .get-started:hover {
+    opacity: 0.7;
+    color: hsl(180, 5%, 96%);
+}
+
+.header .menu__box {
+    display: flex;
+    gap: 30px;
+}
+
+.header a {
+    color: hsl(257, 7%, 63%);
+    transition: 0.3s;
+}
+
+.header a:hover {
+    color: hsl(260, 8%, 14%);
+}
+
+.main {
+    grid-area: main;
+}
+
+.main .intro {
+    padding: 0% 0% 0 10%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 100px;
+}
+
+.main .intro h1 {
+    font-size: 3.5rem;
+    color: hsl(255, 11%, 22%);
+}
+
+.main .intro p {
+    color: hsl(257, 7%, 63%);
+    margin-bottom: 30px;
+}
+
+.main .intro .get-started {
+    font-size: 1.1rem;
+}
+
+.main .shorter-links {
+    margin: 5% 10%;
+    padding: 50px 30px;
+    background: hsl(257, 27%, 26%) url(../images/bg-shorten-desktop.svg);
+    border-radius: 10px;
+}
+
+.main .shorter-links form {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#input-url {
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#submit {
+    width: 20%;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1rem;
+    color: hsl(180, 5%, 96%);
+    background: hsl(180, 66%, 49%);
+    transition: 0.3s;
+}
+
+#submit:hover {
+    filter: brightness(120%);
+    cursor: pointer;
+}
+
+.main .features {
+    padding: 3% 10% 10% 10%;
+    background: hsl(180, 5%, 96%);
+}
+
+.main .features div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 70px;
+}
+
+.main .features div:first-child h2 {
+    font-size: 2rem;
+    color: hsl(255, 11%, 22%);
+}
+
+.main .features div:first-child p {
+    color: hsl(257, 7%, 63%);
+}
+
+.main .features-list {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.main .feature {
+    background: #ffffff;
+    padding: 0 40px 40px;
+    position: relative;
+}
+
+.main .feature h3 {
+    color: hsl(255, 11%, 22%);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.main .feature p {
+    color: hsl(257, 7%, 63%);
+}
+
+.main .feature-1 {
+    top: 40px;
+}
+
+.main .feature-2 {
+    top: 80px;
+}
+
+.main .feature-1::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 10px;
+    background: hsl(180, 66%, 49%);
+    right: -10%;
+    top: 50%;
+}
+
+.main .feature-1::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 10px;
+    background: hsl(180, 66%, 49%);
+    left: -10%;
+    top: 50%;
+}
+
+.main .feature img {
+    padding: 20px;
+    background:  hsl(257, 27%, 26%);
+    border-radius: 100px;
+    position: relative;
+    top: -30px; 
+}
+
+.main .cta {
+    padding: 5% 10%;
+    background: hsl(257, 27%, 26%) url(../images/bg-boost-desktop.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.main .cta h1 {
+    color: #ffffff;
+    font-size: 2.5rem;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    padding: 5% 10%;
+    grid-template-columns: repeat(5,1fr);
+    justify-items: center;
+    background: hsl(260, 8%, 14%);
+}
+
+.footer .footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.footer .footer-menu a {
+    color: hsl(0, 0%, 75%);
+    transition: 0.3s;
+}
+
+.footer .footer-menu a:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+.footer .footer-menu p {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer .social-medias {
+    display: flex;
+    gap: 20px;
+}
+
+.footer .social-medias a {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.footer .social-medias a:hover {
+    color: hsl(180, 66%, 49%);
+}
+
+.menu__box-mobile {
+    display: none;
+}
