@@ -21,7 +21,7 @@ body {
 }
 
 .header img {
-    margin-right: 30px;
+    margin-right: 1.875rem;
 }
 
 .header nav {
@@ -31,37 +31,37 @@ body {
 .header .login-area {
     position: absolute;
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
     right: 10%;
 }
 
 .header .register,
 .main .get-started {
-    padding: 10px 20px;
-    color: hsl(180, 5%, 96%);
-    background: hsl(180, 66%, 49%);
-    border-radius: 100px;
+    padding: 0.625rem 1.25rem;
+    color: var(--almost-white);
+    background: var(--cyan);
+    border-radius: 6.25rem;
     transition: 0.3s;
 }
 
 .header .register:hover,
 .main .get-started:hover {
     opacity: 0.7;
-    color: hsl(180, 5%, 96%);
+    color: var(--almost-white);
 }
 
 .header .menu__box {
     display: flex;
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .header a {
-    color: hsl(257, 7%, 63%);
+    color: var(--grayish-violet);
     transition: 0.3s;
 }
 
 .header a:hover {
-    color: hsl(260, 8%, 14%);
+    color: var(--very-dark-violet);
 }
 
 .main {
@@ -73,17 +73,17 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    gap: 100px;
+    gap: 6.25rem;
 }
 
 .main .intro h1 {
     font-size: 3.5rem;
-    color: hsl(255, 11%, 22%);
+    color: var(--very-dark-blue);
 }
 
 .main .intro p {
-    color: hsl(257, 7%, 63%);
-    margin-bottom: 30px;
+    color: var(--grayish-violet);
+    margin-bottom: 1.875rem;
 }
 
 .main .intro .get-started {
@@ -92,34 +92,42 @@ body {
 
 .main .shorter-links {
     margin: 5% 10%;
-    padding: 50px 30px;
-    background: hsl(257, 27%, 26%) url(../images/bg-shorten-desktop.svg);
-    border-radius: 10px;
+    padding: 3.125rem 1.875rem;
+    background: var(--dark-violet) url(../images/bg-shorten-desktop.svg);
+    background-size: cover;
+    border-radius: 0.625rem;
 }
 
 .main .shorter-links form {
     width: 100%;
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.main .error {
+    color: var(--red);
+    font-size: 1.2rem;
 }
 
 #input-url {
     width: 80%;
     font-family: 'Poppins', sans-serif;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
     border: none;
+    font-size: 1.1rem;
 }
 
 #submit {
     width: 20%;
     font-family: 'Poppins', sans-serif;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 0.9375rem;
+    border-radius: 0.625rem;
     border: none;
     font-size: 1.1rem;
-    color: hsl(180, 5%, 96%);
-    background: hsl(180, 66%, 49%);
+    color: var(--almost-white);
+    background: var(--cyan);
     transition: 0.3s;
 }
 
@@ -130,7 +138,7 @@ body {
 
 .main .features {
     padding: 3% 10% 10% 10%;
-    background: hsl(180, 5%, 96%);
+    background: var(--almost-white);
 }
 
 .main .features div:first-child {
@@ -138,55 +146,55 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 10px;
-    margin-bottom: 70px;
+    gap: 0.625rem;
+    margin-bottom: 4.375rem;
 }
 
 .main .features div:first-child h2 {
     font-size: 2rem;
-    color: hsl(255, 11%, 22%);
+    color: var(--very-dark-blue);
 }
 
 .main .features div:first-child p {
-    color: hsl(257, 7%, 63%);
+    color: var(--grayish-violet);
 }
 
 .main .features-list {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 30px;
+    gap: 1.875rem;
 }
 
 .main .feature {
-    background: #ffffff;
-    padding: 0 40px 40px;
+    background: var(--white);
+    padding: 0 2.5rem 2.5rem;
     position: relative;
 }
 
 .main .feature h3 {
-    color: hsl(255, 11%, 22%);
+    color: var(--very-dark-blue);
     font-size: 1.3rem;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .main .feature p {
-    color: hsl(257, 7%, 63%);
+    color: var(--grayish-violet);
 }
 
 .main .feature-1 {
-    top: 40px;
+    top: 2.5rem;
 }
 
 .main .feature-2 {
-    top: 80px;
+    top: 5rem;
 }
 
 .main .feature-1::after {
     position: absolute;
     content: "";
-    width: 40px;
-    height: 10px;
-    background: hsl(180, 66%, 49%);
+    width: 2.5rem;
+    height: 0.625rem;
+    background: var(--cyan);
     right: -10%;
     top: 50%;
 }
@@ -194,32 +202,33 @@ body {
 .main .feature-1::before {
     position: absolute;
     content: "";
-    width: 40px;
-    height: 10px;
-    background: hsl(180, 66%, 49%);
+    width: 2.5rem;
+    height: 0.625rem;
+    background: var(--cyan);
     left: -10%;
     top: 50%;
 }
 
 .main .feature img {
-    padding: 20px;
-    background:  hsl(257, 27%, 26%);
-    border-radius: 100px;
+    padding: 1.25rem;
+    background:  var(--dark-violet);
+    border-radius: 6.25rem;
     position: relative;
-    top: -30px; 
+    top: -1.875rem; 
 }
 
 .main .cta {
     padding: 5% 10%;
-    background: hsl(257, 27%, 26%) url(../images/bg-boost-desktop.svg);
+    background: var(--dark-violet) url(../images/bg-boost-desktop.svg);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .main .cta h1 {
-    color: #ffffff;
+    color: var(--white);
     font-size: 2.5rem;
 }
 
@@ -229,33 +238,33 @@ body {
     padding: 5% 10%;
     grid-template-columns: repeat(5,1fr);
     justify-items: center;
-    background: hsl(260, 8%, 14%);
+    background: var(--very-dark-violet);
 }
 
 .footer .footer-menu ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    color: #ffffff;
+    gap: 0.625rem;
+    color: var(--white);
 }
 
 .footer .footer-menu a {
-    color: hsl(0, 0%, 75%);
+    color: var(--gray);
     transition: 0.3s;
 }
 
 .footer .footer-menu a:hover {
-    color: hsl(180, 66%, 49%);
+    color: var(--cyan);
 }
 
 .footer .footer-menu p {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     font-weight: 700;
 }
 
 .footer .social-medias {
     display: flex;
-    gap: 20px;
+    gap: 1.25rem;
 }
 
 .footer .social-medias a {
@@ -264,9 +273,62 @@ body {
 }
 
 .footer .social-medias a:hover {
-    color: hsl(180, 66%, 49%);
+    color: var(--cyan);
 }
 
 .menu__box-mobile {
     display: none;
+}
+
+.header input {
+    display: none;
+}
+
+.main > .shortened-links {
+    padding: 0% 10% 3% 10%;
+    width: 100%;
+}
+
+.main > .shortened-links div {
+    display: flex;
+    justify-content: space-between;
+    background: var(--almost-white);
+    padding: 0.625rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.main .original-links {
+    font-size: 1.2rem;
+    color: var(--very-dark-violet);
+}
+
+.main > .shortened-links div:last-child {
+    display: flex;
+    gap: 1.875rem;
+    font-size: 1.2rem;
+}
+
+.main .result {
+    color: var(--cyan);
+}
+
+.copy-btn {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.625rem 1.25rem;
+    border: none;
+    background: var(--cyan);
+    color: var(--white);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.copy-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.copied {
+    background: var(--dark-violet);
 }
